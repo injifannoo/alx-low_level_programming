@@ -37,19 +37,12 @@ if  ((left == 55) && (center == left + 1) && (right == center + 1))
 {
 
 break;
-
 }
 putchar(',');
-
 putchar (' ');
-
 }
-
 }
-
 }
-
 putchar('\n');
-
 return (0);
 }
