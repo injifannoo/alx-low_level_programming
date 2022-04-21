@@ -11,13 +11,9 @@
 int isPrintableASCII(int n)
 
 {
-
 	return (n >= 32 && n <= 126);
 
 }
-
-
-
 /**
  * printHexes - print hex values for string b in formatted form
  * @b: string to print
@@ -64,19 +60,13 @@ void printHexes(char *b, int start, int end)
  * @start: starting position
  * @end: ending position
  */
-
 void printASCII(char *b, int start, int end)
-
 {
-
 	int ch, i = 0;
-
-
 
 	while (i < end)
 
-	{
-
+         {
 		ch = *(b + i + start);
 
 		if (!isPrintableASCII(ch))
@@ -86,31 +76,19 @@ void printASCII(char *b, int start, int end)
 		printf("%c", ch);
 
 		i++;
-
 	}
-
 }
 
-
-
 /**
-
  * print_buffer - prints a buffer
-
  * @b: string
-
  * @size: size of buffer
-
  */
 
 void print_buffer(char *b, int size)
 
 {
-
 	int start, end;
-
-
-
 	if (size > 0)
 
 	{
@@ -118,7 +96,6 @@ void print_buffer(char *b, int size)
 		for (start = 0; start < size; start += 10)
 
 		{
-
 			end = (size - start < 10) ? size - start : 10;
 
 			printf("%08x: ", start);
