@@ -19,6 +19,7 @@ m = -n;
 else
 {
 m = n;
+}
 if (m / 10 ! = 0)
 print_number(m /10 );
 _putchar((m % 10) + '0');
