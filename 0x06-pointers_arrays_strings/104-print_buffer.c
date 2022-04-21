@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+
 /**
  * isPrintableASCII - determines if n is a printable ASCII char
  * @n: integer
@@ -9,6 +10,7 @@ int isPrintableASCII(int n)
 {
 	return (n >= 32 && n <= 126);
 }
+
 /**
  * printHexes - print hex values for string b in formatted form
  * @b: string to print
@@ -19,6 +21,7 @@ void printHexes(char *b, int start, int end)
 
 {
 	int i = 0;
+
 	while (i < 10)
 
 	{
@@ -32,6 +35,7 @@ void printHexes(char *b, int start, int end)
 		i++;
 	}
 }
+
 /**
  * printASCII - print ascii values for string b,
  * formatted to replace nonprintable chars with '.'
@@ -42,6 +46,7 @@ void printHexes(char *b, int start, int end)
 void printASCII(char *b, int start, int end)
 {
 	int ch, i = 0;
+
 	while (i < end)
          {
 		ch = *(b + i + start);
@@ -57,14 +62,12 @@ void printASCII(char *b, int start, int end)
  * @b: string
  * @size: size of buffer
  */
-void print_buffer(char *b, int size)
-
+void prnt_buffer(char *b, int size)
 {
 	int start, end;
+
 	if (size > 0)
-
 	{
-
 		for (start = 0; start < size; start += 10)
 
 		{
@@ -73,7 +76,6 @@ void print_buffer(char *b, int size)
 			printHexes(b, start, end);
 			printASCII(b, start, end);
 			printf("\n");
-
 		}
 
 	} else
