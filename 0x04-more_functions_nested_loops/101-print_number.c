@@ -1,26 +1,34 @@
 #include "main.h"
-#include <studio.h>
 /**
-* print_number - prints int with putchar
-* @n: takes number, hello
-*
-* Return: void
-*/
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
 
-void print_number(int n)
-{
-unsigned int m;
+int main(void)
 
-if (n<0)
 {
-_putchar ('-');
-m = -n;
-}
-else
-{
-m = n;
-}
-if (m / 10 ! = 0)
-print_number(m /10 );
-_putchar((m % 10) + '0');
+
+    print_number(98);
+
+    _putchar('\n');
+
+    print_number(402);
+
+    _putchar('\n');
+
+    print_number(1024);
+
+    _putchar('\n');
+
+    print_number(0);
+
+    _putchar('\n');
+
+    print_number(-98);
+
+    _putchar('\n');
+
+    return (0);
+
 }
